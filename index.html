@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="player__wrapper" data-stuff='./assets/03 - Salem.mp3, ./assets/02 - Into the Shadows (feat. Nick Hipa).mp3'>
+    <img class="album__img" alt="">
+    <audio class="player"></audio>
+    <div class="custom-controls_wrapper">
+      <div class="player-marquee">
+        <span class="song__info song__info_animation"></span>
+      </div>
+    <div class="controls">
+      <svg class="button  prev__button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 "/>
+      </svg>
+
+      <svg class="button play__button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve">
+        <g><path d="M144,124.9L353.8,256L144,387.1V124.9 M128,96v320l256-160L128,96L128,96z"/>
+        </g>
+        </svg>
+
+        <svg class="button stop__button" xmlns="http://www.w3.org/2000/svg" height="512" viewBox="0 0 512 512" width="512"><title/><rect height="320" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" width="16" x="176" y="96"/><rect height="320" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" width="16" x="320" y="96"/></svg>
+    
+        <svg class="button next__button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve"><polygon points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 "/></svg>   
+
+    </div>
+  </div>
+    <!-- <input class="volume__control" type="range" min="0.0" max="1.0" step="0.01"/> -->
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script>
+
+  var playlist = [
+  {link:'./assets/03 - Salem.mp3', cover: './assets/folder.jpg', band: 'Dance with the Dead', song: 'Salem'},
+  {link:'./assets/02 - Into the Shadows (feat. Nick Hipa).mp3', cover: './assets/folder.jpg', band: 'Dance with the Dead', song:'Into the Shadows (feat. Nick Hipa)'},
+  {link:'./assets/04 Sniper Rouge [feat. Mitch Murder].mp3', cover: './assets/cover.jpg', band: 'Satellite Young', song:'Sniper Rouge [feat. Mitch Murder]'},
+]
+
+  </script>
+  <script src="./index.js"></script>
+</body>
+</html>
